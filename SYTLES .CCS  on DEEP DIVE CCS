@@ -1,0 +1,124 @@
+/* styles.css */
+
+/* CSS Variables */
+
+    --primary-color: #4CAF50; /* Green */
+    --secondary-color: #f2f2f2; /* Light Gray */
+    --text-color: #333; /* Dark Gray */
+    --header-footer-bg: #333; 
+    --font-size-large: 2rem;
+    --font-size-medium: 1.5rem;
+    --font-size-small: 1rem;
+    --padding: 20px
+
+/*  Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: var(secondary-color);
+}
+
+/* Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var (header-footer-bg);
+    color: white;
+    padding: var(--padding);
+    text-align: center;
+    z-index: 1000;
+}
+
+/* Intro  Styles */
+.intro {
+    text-align: center;
+    padding: 80px var(--padding) 40px;
+    color: var(--text-color);
+}
+
+.intro h2 {
+    font-size: var(--font-size-large);
+}
+
+.intro p {
+    font-size: var(--font-size-medium);
+}
+
+/* Flexbox  Styles */
+.flexbox-section {
+    padding: var(--padding);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around; /* Space items evenly */
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.flex-item {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--padding);
+    margin: 10px;
+    flex: 1 1 30%; /* Flex-grow, flex-shrink, flex-basis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+/* Grid  Styles */
+.grid-section {
+    padding: var(--padding);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Space between grid items */
+}
+
+.grid-item {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--padding);
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Positioning Styles */
+.positioning-section {
+    padding: var(--padding);
+}
+
+.relative-container {
+    position: relative;
+    padding: var(--padding);
+    background-color: white;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 10px; /* Positioning from the top */
+    left: 10px; /* Positioning from the left */
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--padding);
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: var(--header-footer-bg);
+    color: white;
+    text-align: center;
+    padding: var(--padding);
+    position: relative; /* Ensure footer is at the bottom */
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
